@@ -306,6 +306,7 @@
                 event.preventDefault();
                 lastId++;
                 var formdata = new FormData(form);
+                form.reset();
                 var tr = document.createElement('tr');
                 var td = document.createElement('td');
                 td.append(lastId);
