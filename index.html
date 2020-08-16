@@ -180,7 +180,7 @@
                 <a href="javascript:void(0);">Active Rides</a>
                 <a href="javascript:void(0);">Profile</a>
                 <a href="javascript:void(0);">Logout</a>
-                <img alt="user" src="Profile.png"/>
+                <img alt="user" src="Profile.png" />
 
             </div>
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
@@ -310,11 +310,18 @@
                 var td = document.createElement('td');
                 td.append(lastId);
                 tr.append(td);
+                var level = 0;
                 for (var pair of formdata.entries()) {
-                    var td = document.createElement('td');
-                    td.append(pair[1]);
-                    tr.append(td);
+                    if (pair[0] != 'level') {
+                        var td = document.createElement('td');
+                        td.append(pair[1]);
+                        tr.append(td);
+                    }
+                    else level = pair[1];
                 }
+                var td = document.createElement('td');
+                td.append(level);
+                tr.append(td);
                 table.append(tr);
 
                 var object = {};
@@ -342,8 +349,8 @@
                 e.preventDefault();
                 console.log("Before install trigerred");
                 deferredPrompt = e;
-                if(confirm('Do You want to install this application?'))
-                deferredPrompt.prompt();
+                if (confirm('Do You want to install this application?'))
+                    deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
                         console.log("User accepted the prompt");
