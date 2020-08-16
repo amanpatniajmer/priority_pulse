@@ -1,5 +1,6 @@
 var cacheName='cache-v1';
 var resources=[
+    '.',
     'index.html',
     'style.css',
     'Profile.png',

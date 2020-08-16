@@ -342,6 +342,7 @@
                 e.preventDefault();
                 console.log("Before install trigerred");
                 deferredPrompt = e;
+                if(confirm('Do You want to install this application?'))
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
