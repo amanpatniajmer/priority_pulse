@@ -1,0 +1,16 @@
+{
+    "name":"Priority Pulse",
+    "short_name":"Priority Pulse",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "background_color":"#fff",
+    "theme_color":"#F59494",
+    "description":"Light weight Priority Pulse application with native app experience.",
+    "icons":[{
+        "src":"icon.png", "sizes":"512x512"
+    }],
+    "shortcuts":[{
+        "name":"Priority Pulse",
+        "url":"index.html"
+    }]
+}

@@ -1,0 +1,54 @@
+#nav a:hover {
+    background-color: darkred;
+}
+
+
+a.active {
+    background-color: white;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+    border: 0;
+    background-color: #edf2f7;
+    border-bottom: 3px solid #F59494;
+}
+
+input[type="button"],
+input[type="submit"] {
+    background-color: #F59494;
+    border: 0;
+    font-weight: bold;
+}
+form {
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #F59494;
+    border: 0;
+}
+
+tr {
+    background-color: white;
+    text-align: center;
+}
+
+td:nth-child(even) {
+    background-color: #edf2f7;
+}
+
+tr:hover {
+    background-color: #D3D9E0;
+}
+
