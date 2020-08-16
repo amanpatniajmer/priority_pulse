@@ -123,14 +123,17 @@
 
     @media screen and (max-width: 600px) {
         #nav.responsive {
-            width: 100px;
+            width: 120px;
             position: absolute;
             right: 0;
-            top: 35px;
+            top: 25px;
             flex-wrap: wrap;
             background-color: darkkhaki;
+            border-radius: 5px;
         }
-
+        #nav.responsive a{
+            padding-bottom: 10px;
+        }
         .icon {
             position: absolute;
             right: 0;
@@ -180,7 +183,7 @@
                 <a href="javascript:void(0);">Active Rides</a>
                 <a href="javascript:void(0);">Profile</a>
                 <a href="javascript:void(0);">Logout</a>
-                <img alt="user" src="Profile.png" />
+                <a><img alt="user" src="Profile.png" /></a>
 
             </div>
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
