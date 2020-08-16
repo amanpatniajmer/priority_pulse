@@ -48,7 +48,7 @@ td:nth-child(even) {
     background-color: #edf2f7;
 }
 
-tr:hover {
+tr:hover td{
     background-color: #D3D9E0;
 }
 
