@@ -1,6 +1,6 @@
 # Priority Pulse
 
-The page is live on the given link:
+The page is also deployed on Firebase, on the given link:
 https://node-79e43.web.app/
 
 *For deploying the website Locally*
